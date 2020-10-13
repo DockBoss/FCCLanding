@@ -24,10 +24,19 @@ align-items: center;
 height: 100%;
 }
 #video{
-    
+
+}
+#section{
+
+}
+.sub-section{
+
 }
 .nav-link{
     font-size:30px;
+}
+.btn{
+    
 }
 h1{
     font-size:60px;
