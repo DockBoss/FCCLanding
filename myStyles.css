@@ -29,6 +29,10 @@ height: 100%;
 #form{
     
 }
+#submit{
+
+}
+
 .section{
 
 }
@@ -40,6 +44,15 @@ height: 100%;
 }
 .btn{
 
+}
+.form-text{
+
+}
+.form-input{
+    
+}
+.form-required-message{
+    
 }
 h1{
     font-size:60px;
