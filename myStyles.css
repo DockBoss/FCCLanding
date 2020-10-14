@@ -46,3 +46,7 @@ h1{
     text-shadow: 2px 2px gray;
     color: #0BDAA6;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
