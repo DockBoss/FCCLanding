@@ -3,6 +3,9 @@ background-color: white;
 display:grid;
 grid-template-columns:4fr 2fr;
 grid-template-areas: "logo nav" ;
+position: sticky;
+top: 0;
+padding: 5px;
 }
 #logo{
  display: flex;
