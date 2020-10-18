@@ -27,7 +27,13 @@ align-items: center;
 height: 100%;
 }
 #video{
-
+ grid-area: video;
+ justify-self: center;
+ align-self: center;
+ padding: 5px;
+ margin: 10px;
+ background-color: gray;
+ border-radius: 10px;
 }
 #form{
     
@@ -36,14 +42,18 @@ height: 100%;
 
 }
 #sample{
-
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.25fr 4fr;
+grid-template-areas:"title"
+"video";
 }
 #products{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 2fr;
 grid-template-areas: 
-"h2 h2 h2"
+"title title title"
 "books videos audio";
 }
 #books{
@@ -51,6 +61,7 @@ grid-template-areas:
 }
 #videos{
 grid-area: videos;
+
 }
 #audio{
 grid-area: audio;
@@ -98,7 +109,7 @@ width: 55%;
 grid-area: img;
 }
 .title{
-    grid-area: h2;
+    grid-area: title;
     background-color: gray;
     margin: 10px;
     display: flex;
