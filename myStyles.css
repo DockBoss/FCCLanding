@@ -7,11 +7,23 @@ position: sticky;
 top: 0;
 padding: 5px;
 }
+#footer{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 0.1fr;
+ grid-template-areas: "logo contact sitemap"
+ "social social social"
+ "free copyright free";
+}
 #logo{
  display: flex;
  flex-direction: row;
  align-items: baseline;
  grid-area: logo;
+}
+#footer-logo{
+grid-area:logo;
+width: 100px:
 }
 #header-img{  
 }
@@ -37,6 +49,9 @@ height: 100%;
 }
 #form{
     
+}
+#form-section{
+
 }
 #submit{
 
@@ -66,10 +81,29 @@ grid-area: videos;
 #audio{
 grid-area: audio;
 }
+#copyright{
+font-size:15px;
+grid-area: copyright;
+opacity: 50%;
+color: #000;
+}
+#contact-info{
+    grid-area: contact;
+}
 .section{
 Background-color: white;
 border-radius: 5px;
 margin: 20px;
+}
+#site-map{
+    grid-area: sitemap;
+}
+#social-link{
+    grid-area: social-link;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .sub-section{
     display: grid;
@@ -116,6 +150,12 @@ grid-area: img;
     flex-direction: row;
     justify-content: center;
     border-radius: 10px;
+}
+.footer-social{
+
+}
+.social-thumbnail{
+    width: 50px;
 }
 body{
 background-color: gray;
