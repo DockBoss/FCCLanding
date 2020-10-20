@@ -19,7 +19,9 @@
   </header>
   <body>
     <section id="sample" class="section">
-      <h2>A taste of what we offer</h2>
+      <div class="title">
+        <h2>A taste of what we offer</h2>
+      </div>
       <iframe
         id="video"
         width="1280"
@@ -27,54 +29,103 @@
         src="https://www.youtube.com/embed/Cv1RJTHf5fk"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
         alt="Here in my garage!"
       ></iframe>
     </section>
     <section id="products" class="section">
+     <div class="title">
       <h2>Our Products</h2>
-      <section class="sub-section">
-        <img src="Book-Open-256.png" alt="books" />
+     </div>
+     
+      <section id="books" class="sub-section">
+        <img src="Book-Open-256.png" alt="books" class="product-img" />
         <p>We have a wide library of books available in both print and PDF. Download our app to read your books offline.</p>
     <button class="btn">Browse our library</button>
     </section>
-      <section class="sub-section">
-        <img src="Movie-256.png" alt="videos" />
+      <section id="videos" class="sub-section">
+        <img src="Movie-256.png" alt="videos" class="product-img" />
         <p>We have thousands of hours of informational videos available for rent or purchase. Watch your videos offline through our app.</p>
     <button class="btn">Check out our videos</button>  
     </section>
-      <section class="sub-section">
-        <img src="Mike-256.png" alt="Audio"/>
-        <p>Listen to almost endless podcasts, interviews, and informational talks. Listen anywhere with our new audio player avialble in our mobile app.</p>
+      <section id="audio" class="sub-section">
+        <img src="Mike-256.png" alt="Audio" class="product-img"/>
+        <p>Listen to almost endless podcasts, interviews, and informational talks. Listen anywhere with our new audio player available in our mobile app.</p>
     <button class="btn">Take a listen to our informative talks</button>
-    </section id="form" class="section">
-    <h2>Get in touch with our exceptional team!!</h2>
+      </section>
+    </section>
+    <section id="form-section" class="section">
+      <div class="title">
+        <h2>Get in touch with our exceptional team!!</h2>
+      </div>
+    <div class="form-info">
+      <h3>Id rather learn web development!</h3>
+      <p>I want to make this page look functional but im getting sick of using made up website info. I should have just used dummy text for this. But this is suposed to explain something about the form. Play around with it. see how functional it is.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+      </p>
+    </div>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <div>
+      <div id="f-first-name" class="f-section">
         <h3 class="form-text">First Name</h3>
         <input class="form-input" type="text" placeholder="First Name" required>
+        <div class="form-required-message"></div>
       </div>
-      <div class="form-required-message"></div>
-      <div>
+     
+      <div id="f-last-name" class="f-section">
         <h3 class="form-text">Last Name</h3>
         <input class="form-input" type="text" placeholder="Last Name" required>
+        <div class="form-required-message"></div>
       </div>
-      <div class="form-required-message"></div>
-    <div>
+      
+    <div id="f-email" class="f-section">
       <h3 class="form-text">Email</h3>
       <input class="form-input" type="email" placeholder="Enter your email address" required>
+      <div class="form-required-message"></div>
     </div>
-    <div class="form-required-message"></div>
-      <div>
+
+      <div id="f-message" class="f-section">
       <h3 class="form-text">Message</h3>
-      <textarea class="form-input" rows="5" cols="30"></textarea required>
-    </div>
-    <div class="form-required-message"></div>
-    <input id="submit" type="submit" value="submit" >
+      <textarea class="form-input" rows="8" cols="160"></textarea required>
+        <div class="form-required-message"></div>
+      </div>
+ 
+    <input id="submit" type="submit" value="submit" class="f-section" >
     </form>
     </section>
-  </body>
-  <footer>
-
+  
+ </body>
+  <footer id="footer">
+<img src="" alt="Logo Dark" class="footer-logo">
+<div id="contact-info" class="footer-sub">
+<h3>Contact Us</h3>
+ <p>Phone: <a>(123) 456-7890 </a></p>
+ <p>Email: <a>fakeemail@example.com</a></p>
+</div>
+<div id="site-map" class="footer-sub">
+<h3>Buy My Knowledge</h3>
+<a href="#sample">What we Offer</a>
+<a href="#products">Products</a>
+<a href="#form-section">Get in touch</a>
+</div>
+<div id="social-link" class="footer-sub">
+<a href="#sample"><div class="footer-social">
+<img src="Facebook-256.png" class="social-thumbnail">
+</div></a>
+<a href="#sample"><div class="footer-social">
+  <img src="Twitter-Bird-256.png" class="social-thumbnail">
+</div></a>
+<a href="#sample"><div class="footer-social">
+  <img src="LinkedIn-256.png" class="social-thumbnail">
+</div></a>
+<a href="#sample"><div class="footer-social">
+  <img src="Facebook-256.png" class="social-thumbnail">
+  </div></a>
+  <a href="#sample"><div class="footer-social">
+    <img src="Twitter-Bird-256.png" class="social-thumbnail">
+  </div></a>
+  <a href="#sample"><div class="footer-social">
+    <img src="LinkedIn-256.png" class="social-thumbnail">
+  </div></a>
+</div>
+<p id="copyright">Copyright 2020© jk not really</p>
   </footer>
 </html>
