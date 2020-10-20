@@ -1,11 +1,13 @@
 #header{
-background-color: white;
+background-image: linear-gradient(45deg, #fff 65% , #C8CFD7 30%, #37B58C 5%);
 display:grid;
 grid-template-columns:4fr 2fr;
 grid-template-areas: "logo nav" ;
 position: sticky;
 top: 0;
 padding: 5px;
+border-radius: 5px;
+
 }
 #footer{
  display: grid;
@@ -44,16 +46,45 @@ height: 100%;
  align-self: center;
  padding: 5px;
  margin: 10px;
- background-color: gray;
+ background-color: #918B95;
  border-radius: 10px;
 }
 #form{
-    
+  background-color: #918B95;  
+  border-radius:10px;
+margin: 10px;
+padding: 10px;
+grid-area: form;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 0.5fr 2fr .25fr;
+grid-template-areas: "fn ln email"
+"message message message"
+"submit submit submit";
+grid-gap:5px;
+}
+#f-first-name{
+ grid-area: fn;
+}
+#f-last-name{
+grid-area:ln;
+}
+#f-email{
+grid-area:email;
+}
+#f-message{
+grid-area: message;
 }
 #form-section{
-
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: .25fr 1fr;
+grid-template-areas: "title title"
+"form-info form";
+grid-gap: 10px;
 }
 #submit{
+grid-area: submit;
 
 }
 #sample{
@@ -70,6 +101,7 @@ grid-template-rows: 1fr 2fr;
 grid-template-areas: 
 "title title title"
 "books videos audio";
+
 }
 #books{
  grid-area: books;
@@ -91,9 +123,19 @@ color: #000;
     grid-area: contact;
 }
 .section{
-Background-color: white;
+background-image: linear-gradient(45deg, #37B58C, #37B58C);
 border-radius: 5px;
 margin: 20px;
+}
+.form-info{
+    background-color: #918B95;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #site-map{
     grid-area: sitemap;
@@ -112,7 +154,7 @@ margin: 20px;
    grid-template-areas:
     "img info"
     "img btn"; 
-background-color: gray;
+background-color: #918B95;
 border-radius: 10px;
 margin: 10px;
 }
@@ -123,18 +165,26 @@ margin: 10px;
  grid-area: btn;
  margin: 5px 20px 10px 5px;
  border-radius: 5px;
- color:gray;
- background-color: #fff;
+ color:#37B58C;
+ background-color: #FFF;
  font-size: 20px;
 }
 .form-text{
-
+ color: #FFF;
 }
 .form-input{
-    
+ color: #37B58C;
 }
 .form-required-message{
     
+}
+.f-section{
+    margin:0px; 
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .product-img{
     justify-self: center;
@@ -144,7 +194,7 @@ grid-area: img;
 }
 .title{
     grid-area: title;
-    background-color: gray;
+    background-color: #918B95;
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -158,24 +208,43 @@ grid-area: img;
     width: 50px;
 }
 body{
-background-color: gray;
+background-color: #918B95;
 }
 h1{
     font-size:60px;
     text-shadow: 2px 2px gray;
-    color: #0BDAA6;
+    color: #37B58C;
 }
 h2{
    font-size: 40px;
    color: #fff;
 }
+h3{
+    font-size: 30px;
+    color: #fff;
+}
 a{
     text-decoration: none;
-    color: black;
+    color: #fff;
+    text-shadow: 2.5px -2px 0px #918B95;
+ 
 }
 p{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 grid-area: info;
 
 }
+/* implemented example from w3schools*/
+::placeholder {
+    color: #37B58C;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #37B58C;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #37B58C;
+  }
