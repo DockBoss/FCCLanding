@@ -176,7 +176,12 @@ margin: 10px;
  color: #37B58C;
 }
 .form-required-message{
-    
+    color: #FF0000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding:2px;
+  margin: 10px;
+  text-align: center;
 }
 .f-section{
     margin:0px; 
@@ -248,3 +253,15 @@ grid-area: info;
   ::-ms-input-placeholder { /* Microsoft Edge */
    color: #37B58C;
   }
+#error-fn{
+ visibility: hidden;
+}
+#error-ln{
+    visibility: hidden;
+}
+#error-email{
+    visibility: hidden;
+}
+#error-message{
+    visibility: hidden;
+}
