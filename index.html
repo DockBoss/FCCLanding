@@ -3,6 +3,7 @@
   <head>
     <title>Buy My Knowledge</title>
     <link rel="stylesheet" href="myStyles.css" />
+    <script defer src="script.js"></script>
   </head>
   <header id="header">
     <div id="logo">
@@ -63,32 +64,32 @@
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
       </p>
     </div>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <form id="form" name="contact-form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="GET">
       <div id="f-first-name" class="f-section">
-        <h3 class="form-text">First Name</h3>
-        <input class="form-input" type="text" placeholder="First Name" required>
-        <div class="form-required-message"></div>
+        <label for="first-name" class="form-text">First Name</label>
+        <input id="first-name" class="form-input" name="first-name" type="text" placeholder="First Name">
+        <div id="error-fn" class="form-required-message">Enter first name</div>
       </div>
      
       <div id="f-last-name" class="f-section">
-        <h3 class="form-text">Last Name</h3>
-        <input class="form-input" type="text" placeholder="Last Name" required>
-        <div class="form-required-message"></div>
+        <label for="last-name"class="form-text">Last Name</label>
+        <input id="last-name" class="form-input" name="last-name" type="text" placeholder="Last Name">
+        <div id="error-ln" class="form-required-message">Enter last name</div>
       </div>
       
     <div id="f-email" class="f-section">
-      <h3 class="form-text">Email</h3>
-      <input class="form-input" type="email" placeholder="Enter your email address" required>
-      <div class="form-required-message"></div>
+      <label  for="email" class="form-text">Email</label>
+      <input id="email" class="form-input" name="email" type="text" placeholder="Enter your email address">
+      <div id="error-email" class="form-required-message"></div>
     </div>
 
       <div id="f-message" class="f-section">
-      <h3 class="form-text">Message</h3>
-      <textarea class="form-input" rows="8" cols="160"></textarea required>
-        <div class="form-required-message"></div>
+      <label for="message" class="form-text">Message</h3>
+      <textarea id="message" class="form-input" name="message" rows="8" cols="160"></textarea>
+        <div id="error-message" class="form-required-message">Enter a message</div>
       </div>
  
-    <input id="submit" type="submit" value="submit" class="f-section" >
+   <button id="submit" type="submit" value="submit" class="f-section">Submit</button>
     </form>
     </section>
   
