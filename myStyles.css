@@ -10,12 +10,28 @@ border-radius: 5px;
 
 }
 #footer{
+    width: 99%;
+    margin: 0px;
+padding:0;
+}
+#footer-grid{
+    padding: 20px;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 1fr 1fr 0.1fr;
- grid-template-areas: "logo contact sitemap"
+ grid-template-rows: 1fr 1fr 0.25fr;
+ grid-template-areas: 
+ "logo contact sitemap"
  "social social social"
- "free copyright free";
+ "copyright copyright copyright";
+ background-color: #37B58C;
+margin: 0px;
+}
+.box-look{
+    border-radius: 4px;
+    border-right: 15px solid #C8CFD7;
+    border-left: 15px solid #918B95;
+    border-bottom: 20px solid #A0989A;
+    border-top: 7px solid #54504B;
 }
 #logo{
  display: flex;
@@ -25,7 +41,7 @@ border-radius: 5px;
 }
 #footer-logo{
 grid-area:logo;
-width: 100px:
+width: 100px;
 }
 #header-img{  
 }
@@ -47,7 +63,7 @@ height: 100%;
  padding: 5px;
  margin: 10px;
  background-color: #918B95;
- border-radius: 10px;
+ border-radius: 5px;
 }
 #form{
   background-color: #918B95;  
@@ -118,18 +134,20 @@ font-size:15px;
 grid-area: copyright;
 opacity: 50%;
 color: #000;
+text-align:center;
 }
 #contact-info{
     grid-area: contact;
+    
+  
 }
 .section{
-background-image: linear-gradient(45deg, #37B58C, #37B58C);
-border-radius: 5px;
+background-color: #37B58C;
 margin: 20px;
 }
 .form-info{
     background-color: #918B95;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     margin: 10px;
     display:flex;
@@ -141,10 +159,10 @@ margin: 20px;
     grid-area: sitemap;
 }
 #social-link{
-    grid-area: social-link;
+    grid-area: social;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .sub-section{
@@ -155,7 +173,7 @@ margin: 20px;
     "img info"
     "img btn"; 
 background-color: #918B95;
-border-radius: 10px;
+border-radius: 5px;
 margin: 10px;
 }
 .nav-link{
@@ -199,21 +217,26 @@ grid-area: img;
 }
 .title{
     grid-area: title;
-    background-color: #918B95;
+    background-color: #228D6C;
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .footer-social{
 
+}
+.footer-sub{
+ padding: 20px;
+ background-color: #54504B;
+ margin: 10px;
 }
 .social-thumbnail{
     width: 50px;
 }
 body{
-background-color: #918B95;
+background-color: #C8CFD7;
 }
 h1{
     font-size:60px;
