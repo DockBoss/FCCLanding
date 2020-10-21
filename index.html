@@ -19,12 +19,13 @@
     </nav>
   </header>
   <body>
-    <section id="sample" class="section">
-      <div class="title">
+    <section id="sample" class="section box-look">
+      <div class="title box-look">
         <h2>A taste of what we offer</h2>
       </div>
       <iframe
         id="video"
+        class="box-look"
         width="1280"
         height="720"
         src="https://www.youtube.com/embed/Cv1RJTHf5fk"
@@ -33,38 +34,38 @@
         alt="Here in my garage!"
       ></iframe>
     </section>
-    <section id="products" class="section">
-     <div class="title">
+    <section id="products" class="section box-look">
+     <div class="title box-look">
       <h2>Our Products</h2>
      </div>
      
-      <section id="books" class="sub-section">
+      <section id="books" class="sub-section box-look">
         <img src="Book-Open-256.png" alt="books" class="product-img" />
         <p>We have a wide library of books available in both print and PDF. Download our app to read your books offline.</p>
     <button class="btn">Browse our library</button>
     </section>
-      <section id="videos" class="sub-section">
+      <section id="videos" class="sub-section box-look">
         <img src="Movie-256.png" alt="videos" class="product-img" />
         <p>We have thousands of hours of informational videos available for rent or purchase. Watch your videos offline through our app.</p>
     <button class="btn">Check out our videos</button>  
     </section>
-      <section id="audio" class="sub-section">
+      <section id="audio" class="sub-section box-look">
         <img src="Mike-256.png" alt="Audio" class="product-img"/>
         <p>Listen to almost endless podcasts, interviews, and informational talks. Listen anywhere with our new audio player available in our mobile app.</p>
     <button class="btn">Take a listen to our informative talks</button>
       </section>
     </section>
-    <section id="form-section" class="section">
-      <div class="title">
+    <section id="form-section" class="section box-look">
+      <div class="title box-look">
         <h2>Get in touch with our exceptional team!!</h2>
       </div>
-    <div class="form-info">
+    <div class="form-info box-look">
       <h3>Id rather learn web development!</h3>
       <p>I want to make this page look functional but im getting sick of using made up website info. I should have just used dummy text for this. But this is suposed to explain something about the form. Play around with it. see how functional it is.
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
       </p>
     </div>
-    <form id="form" name="contact-form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="GET">
+    <form id="form" class="box-look" name="contact-form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="GET">
       <div id="f-first-name" class="f-section">
         <label for="first-name" class="form-text">First Name</label>
         <input id="first-name" class="form-input" name="first-name" type="text" placeholder="First Name">
@@ -73,7 +74,7 @@
      
       <div id="f-last-name" class="f-section">
         <label for="last-name"class="form-text">Last Name</label>
-        <input id="last-name" class="form-input" name="last-name" type="text" placeholder="Last Name">
+        <input id="last-name" class="form-input" name="last-name" type="text" placeholder="Last Name" re>
         <div id="error-ln" class="form-required-message">Enter last name</div>
       </div>
       
@@ -94,20 +95,21 @@
     </section>
   
  </body>
-  <footer id="footer">
+  <footer id="footer" class="box-look">
+    <div id="footer-grid">
 <img src="" alt="Logo Dark" class="footer-logo">
-<div id="contact-info" class="footer-sub">
+<div id="contact-info" class="footer-sub box-look">
 <h3>Contact Us</h3>
  <p>Phone: <a>(123) 456-7890 </a></p>
  <p>Email: <a>fakeemail@example.com</a></p>
 </div>
-<div id="site-map" class="footer-sub">
+<div id="site-map" class="footer-sub box-look">
 <h3>Buy My Knowledge</h3>
 <a href="#sample">What we Offer</a>
 <a href="#products">Products</a>
 <a href="#form-section">Get in touch</a>
 </div>
-<div id="social-link" class="footer-sub">
+<div id="social-link" class="footer-sub box-look">
 <a href="#sample"><div class="footer-social">
 <img src="Facebook-256.png" class="social-thumbnail">
 </div></a>
@@ -128,5 +130,6 @@
   </div></a>
 </div>
 <p id="copyright">Copyright 2020© jk not really</p>
+</div>
   </footer>
 </html>
