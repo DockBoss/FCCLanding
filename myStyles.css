@@ -8,6 +8,7 @@
   top: 0;
   padding: 5px;
   border-radius: 0px;
+  z-index: 1;
 }
 #logo {
   display: flex;
@@ -155,12 +156,12 @@ h1 {
   grid-area: form;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr 0.25fr;
+  grid-template-rows: 1fr 2fr 0.25fr;
   grid-template-areas:
     "fn ln email"
     "message message message"
     "submit submit submit";
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
 #f-first-name {
   grid-area: fn;
@@ -198,16 +199,19 @@ h1 {
 }
 .form-text {
   color: #fff;
+  font-size: 30px;
+  padding: 10px;
 }
 .form-input {
   color: #37b58c;
+  font-size: 20px;
 }
 .f-section {
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .form-required-message {
@@ -217,6 +221,12 @@ h1 {
   padding: 2px;
   margin: 10px;
   text-align: center;
+}
+textarea{
+    width:auto;
+   
+    resize: none;
+    margin: 0px;
 }
 
 /*General styles*/
@@ -234,12 +244,27 @@ h1 {
 }
 
 .btn {
+
   grid-area: btn;
   margin: 5px 20px 10px 5px;
-  border-radius: 0px;
+  border-radius: 5px;
   color: #37b58c;
   background-color: #fff;
   font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 8px #37b58c;
+  text-align: center;
+  
+
+}
+.btn:hover{
+    background-color: #c8cfd7;
+}
+.btn:active{
+    background-color: #c8cfd7;
+    box-shadow: 0px 4px #00341d;
+    transform: translateY(3px);
 }
 
 .title {
