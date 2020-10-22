@@ -17,7 +17,7 @@
   grid-area: logo;
 }
 #header-img {
-  width: 250px;
+  width: 200px;
 }
 #nav-bar {
   grid-area: nav;
@@ -35,7 +35,6 @@
 }
 h1 {
   font-size: 60px;
-  text-shadow: 2px 2px gray;
   color: #37b58c;
 }
 
@@ -139,6 +138,7 @@ h1 {
   background-color: #918b95;
   border-radius: 0px;
   margin: 10px;
+  padding: 10px;
 }
 .product-img {
   justify-self: center;
@@ -253,9 +253,9 @@ textarea{
   font-size: 20px;
   cursor: pointer;
   outline: none;
-  box-shadow: 1px 8px #37b58c;
+  box-shadow: 0px 8px #37b58c;
   text-align: center;
-  
+  margin: 10px;
 
 }
 .btn:hover{
@@ -265,6 +265,7 @@ textarea{
     background-color: #c8cfd7;
     box-shadow: 0px 4px #00341d;
     transform: translateY(3px);
+    outline: none;
 }
 
 .title {
@@ -278,6 +279,9 @@ textarea{
 }
 body {
   background-color: #c8cfd7;
+}
+html{
+    scroll-padding-top: 210px;
 }
 
 h2 {
