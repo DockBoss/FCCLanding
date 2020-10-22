@@ -9,6 +9,7 @@ const errorEmail = document.getElementById('error-email');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
+
    let error = false;
  if(fName.value === '' || fName.value === null){
     errorFn.style.visibility = 'visible';
@@ -45,3 +46,4 @@ form.addEventListener('submit', (e) => {
  }
    
 });
+ 
