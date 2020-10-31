@@ -1,5 +1,9 @@
+
+
+
 /*Header styles*/
 #header {
+
   background-image: linear-gradient(45deg, #fff 65%, #c8cfd7 30%, #37b58c 5%);
   display: grid;
   grid-template-columns: 4fr 2fr;
@@ -9,6 +13,10 @@
   padding: 5px;
   border-radius: 0px;
   z-index: 1;
+  @media (max-width: $laptop){
+width: $laptop;
+background-color: #fff;
+  }
 }
 #logo {
   display: flex;
@@ -282,6 +290,7 @@ body {
 }
 html{
     scroll-padding-top: 210px;
+ width: 100%;
 }
 
 h2 {
